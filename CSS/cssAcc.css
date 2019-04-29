@@ -1,0 +1,48 @@
+html,body{
+	width:100%;
+	height:100%;
+}
+*{
+	margin:0;
+	padding:0;
+	
+}
+body{
+	background:url(https://i.pinimg.com/originals/28/fc/0c/28fc0c6c0e376b3f23e69c5d950795b6.jpg)
+}
+nav{
+	height:10%;
+	background: radial-gradient(circle farthest-corner at 100px 50px, #89e69b, #664e1e);
+	top:0;
+}
+
+#produits h1{
+	text-align:center;
+	margin: 60px;
+	font-size: 40px;
+	color:white;
+}
+
+@media screen and (max-width: 3000px) {
+  nav div ul li a {
+	
+	color:white !important;
+    float: none;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  nav div ul li a {
+	
+	color:white !important;
+    float: none;
+    width: 100%;
+  }
+}
+
+.card-img-top{
+	width: 100%;
+	height: 17.5vw;
+	object-fit: cover;
+}
