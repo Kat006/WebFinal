@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>KatBae Store</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link type="text/css" rel="stylesheet" href="CSS/cssPanier.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <a class="navbar-brand text-dark" href="acceuil.html">Accueil</a>
+    <img src="images/logo.png" alt="Logo Katya" />
+    <button type="button" class="btn-primary navbar-expand-sm navbar-toggler bg-dark navbar-dark" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav justify-content-end d-flex flex-fill ">
+        <li class="navbar-item">
+          <a class="nav-link p-2 " href="acceuil.html">Produits</a>
+        </li>
+        <li class="navbar-item">
+          <a class="nav-link p-2 " href="contact.html">Contact</a>
+        </li>
+        <li class="navbar-item">
+          <a class="nav-link p-2 " href="panier.html">Panier</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    <table class="table table-striped table-success ">
+      <thead>
+        <tr>
+          <th scope="col">Produit</th>
+          <th scope="col">Numero</th>
+          <th scope="col">Quantite</th>
+          <th scope="col">Prix</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <th scope="row">Renard</th>
+        <td>#587</td>
+        <td>1</td>
+        <td>940$</td>
+      </tr>
+      <tr>
+        <th scope="row">Trou</th>
+          <td>#736</td>
+          <td>3</td>
+          <td>235$</td>
+        </tr>
+        <tr>
+          <th scope="row">Budda</th>
+          <td>#302</td>
+          <td>1</td>
+          <td>571$</td>
+        </tr>
+        <tr>
+          <th scope="col">Total:</th>
+          <th></th>
+          <th></th>
+          <th>2 216$</th>
+        </tr>
+
+      </tbody>
+    </table>
+    <form class="" action="confirmation.html" method="post">
+      <input class="btn-outline-success btn-block p-2 mb-5 " type="submit" value="Continuer">
+    </form>
+
+  <footer>
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="fixed-bottom text-center bg-dark text-white">
+          &copy; André-Laurendeau 2019
+          / Shmatkova Katya
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="script/jsAcc.js"></script>
+</body>
+</html>

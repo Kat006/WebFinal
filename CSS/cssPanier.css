@@ -8,7 +8,7 @@ html,body{
 
 }
 body{
-	background:url(https://i.pinimg.com/originals/28/fc/0c/28fc0c6c0e376b3f23e69c5d950795b6.jpg)
+	background:url(https://i.pinimg.com/originals/28/fc/0c/28fc0c6c0e376b3f23e69c5d950795b6.jpg);
 }
 nav{
 	height:10%;
@@ -16,12 +16,15 @@ nav{
 	top:0;
 }
 
-#contact{
-	text-align:center;
-	margin-left: 60px;
-	margin: 60px;
-	font-size: 40px;
-	color:white;
+table{
+  margin-top: 250px;
+  margin-left: 450px;
+  width: 750px !important;
+}
+input{
+  margin-left: 450px;
+  width: 750px !important;
+  height: 55px;
 }
 
 @media screen and (max-width: 3000px) {

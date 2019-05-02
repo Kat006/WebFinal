@@ -5,7 +5,7 @@ html,body{
 *{
 	margin:0;
 	padding:0;
-	
+
 }
 body{
 	background:url(https://i.pinimg.com/originals/28/fc/0c/28fc0c6c0e376b3f23e69c5d950795b6.jpg)
@@ -22,10 +22,34 @@ nav{
 	font-size: 40px;
 	color:white;
 }
+.card p{
+	position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background: rgba(0,0,0, 0.72);
+color: #fff;
+visibility: hidden;
+opacity: 0;
+height: 70px;
+
+/* transition effect. not necessary */
+transition: opacity .2s, visibility .2s;
+}
+
+.card:hover p {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+
 
 @media screen and (max-width: 3000px) {
   nav div ul li a {
-	
+
 	color:white !important;
     float: none;
     width: 100%;
@@ -34,7 +58,7 @@ nav{
 
 @media screen and (max-width: 990px) {
   nav div ul li a {
-	
+
 	color:white !important;
     float: none;
     width: 100%;
