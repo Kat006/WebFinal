@@ -6,7 +6,7 @@
   <title>KatBae Store</title>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-  <link type="text/css" rel="stylesheet" href="CSS/cssPanier.css">
+  <link type="text/css" rel="stylesheet" href="CSS/cssConfirmation.css">
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- Popper JS -->
@@ -47,51 +47,39 @@
         </tr>
       </thead>
       <tbody>
-
-        <tr>
-          <th scope="row">Renard</th>
-        <td>#587</td>
-        <td>1</td>
-        <td>940$</td>
-      </tr>
-      <tr>
-        <th scope="row">Trou</th>
-          <td>#736</td>
-          <td>3</td>
-          <td>235$</td>
-        </tr>
-        <tr>
-          <th scope="row">Budda</th>
-          <td>#302</td>
-          <td>1</td>
-          <td>571$</td>
-        </tr>
-        <tr>
-          <th scope="col">TVQ:</th>
-          <td></td>
-          <td></td>
-          <td>221$</td>
-        </tr>
-        <tr>
-          <th scope="col">TPS:</th>
-          <td></td>
-          <td></td>
-          <td>110.8$</td>
-        </tr>
-        <tr>
-          <th scope="col">Shipping:</th>
-          <td></td>
-          <td></td>
-          <td>75$</td>
-        </tr>
-        <tr>
-          <th scope="col">Total:</th>
-          <th></th>
-          <th></th>
-          <th>2 622.8$</th>
-        </tr>
-
+        <template>
+          <tr>
+            <th scope="row">Renard</th>
+            <td>1</td>
+            <td>1</td>
+            <td>940</td>
+          </tr>
+        </template>
       </tbody>
+      <tfoot>
+        <template>
+          <tr>
+            <th scope="row">Sous-total:</th>
+            <td colspan="3">940</td>
+          </tr>
+          <tr>
+            <th scope="row">TPS:</th>
+            <td colspan="3">940</td>
+          </tr>
+          <tr>
+            <th scope="row">TVQ:</th>
+            <td colspan="3">940</td>
+          </tr>
+          <tr>
+            <th scope="row">Shipping:</th>
+            <td colspan="3">75</td>
+          </tr>
+          <tr>
+            <th scope="row">Total:</th>
+            <td colspan="3">940</td>
+          </tr>
+        </template>
+      </tfoot>
     </table>
     <form class="" action="facture.html" method="post">
       <input class="btn-outline-warning btn-block p-2 mb-5 " type="submit" value="Confirmer le payement">
@@ -106,6 +94,6 @@
       </div>
     </div>
   </footer>
-  <script src="script/jsAcc.js"></script>
+  <script src="script/jsConfirmation.js"></script>
 </body>
 </html>
