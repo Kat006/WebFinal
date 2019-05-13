@@ -22,12 +22,12 @@ $(document).ready(function() {
   }
 
   cartes.each(function(index, value) {
-    var boutton = $("button", cartes[index]);
-    $("input", cartes[index]).click(function() {
-      if ($("input", cartes[index]).val() != 0) {
-        boutton.disabled = false;
+    var boutton = $("button", cartes.eq(index));
+    $("input", cartes.eq(index)).click(function() {
+      if ($("input", cartes.eq(index)).val() != 0) {
+        boutton.prop("disabled", false);
       } else {
-        boutton.disabled = true;
+        boutton.prop("disabled", true);
       }
     });
   });

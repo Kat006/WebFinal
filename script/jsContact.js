@@ -29,4 +29,11 @@ class NameForm extends React.Component {
   }
 }
 
+class MessageClient  extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {message: '',erreur: '', icon: {visibility:"hidden"}};
+  }
+}
+
 ReactDOM.render( <NameForm />, document.getElementById("contact"));
