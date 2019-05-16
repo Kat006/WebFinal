@@ -51,5 +51,6 @@ $(document).ready(function() {
 
     }
     supplimentsMoney();
+  localStorage.clear();
   }
 });
