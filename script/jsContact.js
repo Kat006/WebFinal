@@ -197,7 +197,7 @@ class Revenu extends React.Component {
    }
 
    render = () =>
-     <div className = "ferm-group">
+     <div className = "form-group">
        <label htmlFor="message">Votre commentaire <span> {this.state.erreur}</span> <small className="text-danger"></small></label>
        <textarea className="form-control"
        id="message"
@@ -214,7 +214,7 @@ class Revenu extends React.Component {
 
 class GererTout extends React.Component {
   render = () =>
-      <div>
+      <form action="jsContact.js" method="get">
         <PrenameForm />
         <NameForm />
         <EmailAdd />
@@ -222,7 +222,7 @@ class GererTout extends React.Component {
         <Age />
         <Revenu />
         <MessageClient />
-      </div>
+      </form>
       ;
 
 }
